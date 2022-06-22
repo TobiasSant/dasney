@@ -1,0 +1,308 @@
+body {
+  background: #040714;
+  font-family: sans-serif;
+  color: #f9f9f9;
+}
+
+/* HEADER */
+header {
+  height: 70px;
+}
+@media only screen and (max-width: 480px) {
+  header {
+    height: 52px;
+  }
+}
+.nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header nav div a {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header nav div a img {
+  width: 80px;
+}
+.btn-suscripcion,
+.btn-inicio {
+  text-transform: uppercase;
+  height: 50px;
+  margin: 5px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: inherit;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 18px;
+  font-weight: 400px;
+}
+.btn-inicio {
+  background: none;
+  border: solid 1px silver;
+}
+.btn-suscripcion {
+  background: #0063e5;
+  border: none;
+}
+@media only screen and (max-width: 768px) {
+  .btn-suscripcion,
+  .btn-inicio {
+    height: 40px;
+    padding: 9px 8px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .btn-suscripcion,
+  .btn-inicio {
+    padding: 5px 8px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .btn-suscripcion,
+  .btn-inicio {
+    font-size: 12px;
+  }
+  header nav div a {
+    justify-content: center;
+  }
+}
+/* FIN HEADER TERMINADO */
+
+/* SECTION 1 */
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  background: url(../images/splash.jpg) center right;
+  background-size: cover;
+  padding: 60px 6vw;
+}
+.texto-section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+}
+.texto-section1 h3 {
+  line-height: 35px;
+}
+.texto-section1 img {
+  width: 400px;
+  margin-top: 20px;
+}
+.suscribirme button {
+  background: #0063e5;
+  color: white;
+  width: 100%;
+  margin: 40px auto 0;
+  padding: 20px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+.textito1 {
+  display: block;
+  margin-top: 20px;
+  font-size: 10px;
+  width: 90%;
+  margin: 20px auto;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.texto-section1 a {
+  color: white;
+  display: block;
+  margin-top: 30px;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+.textito2 {
+  display: block;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  color: #c0c0c0;
+}
+@media only screen and (max-width: 992px) {
+  .hero {
+    min-height: 0px;
+    height: auto;
+    background: url(../images/splash-chico.jpg) center top;
+    background-size: cover;
+    padding: 300px 14.5vw 60px;
+  }
+  .texto-section1 img {
+    width: 180px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero {
+    min-height: 0px;
+    background: url(../images/splash-chico.jpg) center top no-repeat;
+    background-size: contain;
+    padding: 20vh 14.5vw 60px;
+  }
+  .suscribirme button {
+    margin: 20px auto 0;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* FIN SECTION 1 */
+
+/* SECTION 2 3 Y 4 */
+.space {
+  padding: 60px 0;
+}
+.img-section {
+  width: 100%;
+}
+.section3chico {
+  display: none;
+}
+.img-section4 {
+  width: 200%;
+}
+.img-section4chico {
+  display: none;
+}
+.section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.section-text h2 {
+  font-size: 40px;
+  margin: 0 50px 30px;
+}
+.section-text h3 {
+  font-size: 30px;
+  margin: 0 50px 30px;
+}
+.section-text p {
+  margin: 0 50px 30px;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+.section-text button {
+  background: #0063e5;
+  color: white;
+  margin: 0 50px 30px;
+  padding: 14px 70px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    text-align: center;
+    padding: 10px;
+  }
+  .section-text {
+    align-items: center;
+  }
+  .section3chico {
+    display: block;
+  }
+  .section3 {
+    display: none;
+  }
+  .img-section4chico {
+    display: block;
+    width: 100%;
+  }
+  .img-section4 {
+    display: none;
+  }
+  .section-text button {
+    margin: 0 50px;
+    padding: 14px 40px;
+    font-size: 14px;
+  }
+  .section-text h2 {
+    font-size: 30px;
+  }
+  .section-text h3 {
+    font-size: 20px;
+  }
+  .section-text p {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+}
+
+/* FIN SECTION 2 3 Y 4 */
+
+/* SECTION 5 */
+.section5{
+  text-align: center;
+}
+.card {
+  background: none;
+  border: none;
+}
+.card img {
+  width: 100%;
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+/* FIN SECTION 5 */
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: #ccc;
+  font-size: 12px;
+  padding: 54px;
+  padding-bottom: 20px;
+}
+.img-footer {
+  width: 80px;
+}
+.links {
+  margin-top: 10px;
+}
+.links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+.links ul li {
+  margin: 10px 20px;
+}
+.links ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+.links ul li select {
+  color: inherit;
+  background: transparent;
+  border: none;
+}
+.textos-footer {
+  width: 80%;
+  text-align: center;
+}
+/* FIN FOOTER */
